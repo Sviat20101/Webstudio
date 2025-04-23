@@ -4,40 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо | WebStudio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>WebStudio</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Студія</a></li>
-                    <li><a href="#" class="active">Портфоліо</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
+<body class="page-body">
+
+    <header class="page-header">
+        <div class="page-header__container">
+            <h1 class="page-header__logo">WebStudio</h1>
+            <nav class="page-header__nav">
+                <ul class="page-header__nav-list">
+                    <li class="page-header__nav-item"><a href="index.html" class="page-header__nav-link">Студія</a></li>
+                    <li class="page-header__nav-item"><a href="#" class="page-header__nav-link active">Портфоліо</a></li>
+                    <li class="page-header__nav-item"><a href="contacts.html" class="page-header__nav-link">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="contact-info">
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="page-header__contact-list">
+                <li class="page-header__contact-item"><a href="mailto:info@devstudio.com" class="page-header__contact-link">info@devstudio.com</a></li>
+                <li class="page-header__contact-item"><a href="tel:+380961111111" class="page-header__contact-link">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
-    
-    <main>
+
+    <main class="page-main">
+        <div class="page-main__custom-box">
+            <p class="page-main__custom-text">Це спеціальний елемент згідно з завданням.</p>
+        </div>
+
         <section class="portfolio">
-            <div class="container">
-                <h2>Наше Портфоліо</h2>
-                <ul class="portfolio-gallery">
-                    <li><img src="images/1.png" alt="веб-сайт"><p>Технокряк</p></li>
-                    <li><img src="images/2.png" alt="Дизайн"><p>Постер New Orlean vs Golden star</p></li>
-                    <li><img src="images/3.png" alt="Додаток"><p>Ресторан SeaFood </p></li>
-                    <li><img src="images/4.png" alt="Маркетинг"><p>Проект Prime</p></li>
-                    <li><img src="images/5.png" alt="Додаток"><p>Проект BOX</p></li>
-                    <li><img src="images/6.png" alt="веб-сайт"><p>Inspiration has no Borders</p></li>
+            <div class="portfolio__container">
+                <h2 class="portfolio__title">Наше Портфоліо</h2>
+                <ul class="portfolio__gallery">
+                    <li class="portfolio__item">
+                        <img src="images/1.png" alt="веб-сайт" class="portfolio__image">
+                        <p class="portfolio__text">Технокряк</p>
+                    </li>
+                    <li class="portfolio__item">
+                        <img src="images/2.png" alt="Дизайн" class="portfolio__image">
+                        <p class="portfolio__text">Постер New Orlean vs Golden star</p>
+                    </li>
+                    <li class="portfolio__item">
+                        <img src="images/3.png" alt="Додаток" class="portfolio__image">
+                        <p class="portfolio__text">Ресторан SeaFood</p>
+                    </li>
+                    <li class="portfolio__item">
+                        <img src="images/4.png" alt="Маркетинг" class="portfolio__image">
+                        <p class="portfolio__text">Проект Prime</p>
+                    </li>
+                    <li class="portfolio__item">
+                        <img src="images/5.png" alt="Додаток" class="portfolio__image">
+                        <p class="portfolio__text">Проект BOX</p>
+                    </li>
+                    <li class="portfolio__item">
+                        <img src="images/6.png" alt="веб-сайт" class="portfolio__image">
+                        <p class="portfolio__text">Inspiration has no Borders</p>
+                    </li>
                 </ul>
             </div>
         </section>
     </main>
-    
+
+    <footer class="page-footer">
+        <div class="page-footer__container">
+            <h3 class="page-footer__logo">WebStudio</h3>
+            <p class="page-footer__address">м. Київ, пр-т Лесі Українки, 26</p>
+            <p class="page-footer__email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+            <p class="page-footer__phone"><a href="tel:+380961111111">+38 096 111 11 11</a></p>
+        </div>
+    </footer>
+</body>
+</html>
