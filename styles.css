@@ -1,74 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
-    --primary-color: #0580fc;
-    --secondary-color: #191a1c;
-    --text-color: #000000;
-    --bg-light: #ffffff;
+  --accent-color: #0022ff;
+  --black: #222222;
+  --grey: #000000;
+  --white: #ffffff; /* Виправив */
+  --input-color: #000000;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--text-color);
-    background-color: var(--bg-light);
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--black);
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background: #7ae40f;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(230, 11, 11, 0.888);
+a {
+  text-decoration: none;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+h1, h2, h3, ul, li, button, input, label, form, p {
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a:hover {
-    color: var(--primary-color);
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-.custom-box {
-  width: 350px;
-  height: 220px;
-  padding: 15px 10px 20px 10px;
+
+/* Header */
+.header {
+  margin-top: 44px;
+  margin-bottom: 109px;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 1.3px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background-color: #2f303a;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Portfolio */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background-color: #000000;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(58, 33, 33, 0.1);
+}
+
+/* Team Section */
+.team-section {
+  background-color: #f5f4fa;
+  padding: 120px 0;
+  flex-grow: 1;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.photo-box {
+  text-align: center;
+  width: 270px;
+  padding: 20px;
+}
+
+.photo-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.photo-box p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
   margin-bottom: 30px;
-  border: 2px dashed red;
-  background-color: green;
-}
-.page-header__logo {
-    font-size: 24px;
-    line-height: 1.2; /* Наприклад, якщо було 28px для 24px */
-    font-weight: 700;
 }
 
-.page-header__nav-link {
-    font-size: 16px;
-    line-height: 1.5; /* типова висота */
-    font-weight: bold;
+/* Footer */
+.footer {
+  background-color: #2e2f42;
+  padding: 40px 0;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: auto;
 }
 
-.portfolio__title {
-    font-size: 28px;
-    line-height: 1.3; /* Наприклад, 36px на 28px */
-    font-weight: 600;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
 
-.portfolio__text {
-    font-size: 16px;
-    line-height: 1.5;
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-logo span {
+  color: #4d5ae5;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-contact {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-contact:hover {
+  text-decoration: underline;
+}
+
+/* General Rows */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.column {
+  text-align: center;
+  max-width: 200px;
+}
+
+.photo-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
 }
