@@ -226,3 +226,123 @@ h1, h2, h3, ul, li, button, input, label, form, p {
   gap: 40px;
   margin-bottom: 50px;
 }
+/* Загальні налаштування */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Навігація */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: #212121;
+}
+
+/* Портфоліо */
+.portfolio {
+  padding: 94px 0;
+}
+
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+
+.filter-button {
+  padding: 6px 22px;
+  border: none;
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 370px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 294px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.portfolio-item h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 20px 24px 4px 24px;
+}
+
+.portfolio-item p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+  margin: 0 24px 20px 24px;
+}
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start; /* ВИПРАВЛЕНО: вирівнюємо по лівому краю */
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3); /* три колонки з рівними відступами */
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #ffffff;
+}
